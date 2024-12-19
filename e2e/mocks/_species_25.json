@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": 25,
+    "name": "pikachu",
+    "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/25.png",
+    "genre": "Mouse",
+    "description": "When several of these POK\u00e9MON gather, their electricity could build and cause lightning storms.",
+    "weight": 6,
+    "height": 0.4,
+    "types": [
+      "electric"
+    ]
+  }
+}

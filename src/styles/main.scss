@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+@use 'src/styles/theme';
+
+@include mat.core();
+@include mat.all-component-themes(theme.$my-theme);
+@include mat.typography-hierarchy(theme.$my-theme);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}

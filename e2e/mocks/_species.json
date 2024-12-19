@@ -1,0 +1,916 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/1.png",
+      "types": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 3,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/4.png",
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/6.png",
+      "types": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 8,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 9,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 10,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 11,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 12,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 13,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 14,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 15,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 16,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 17,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 18,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 19,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 20,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 21,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 22,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 23,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 24,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "image": "https:\/\/raw.githubusercontent.com\/PokeAPI\/sprites\/master\/sprites\/pokemon\/other\/official-artwork\/25.png",
+      "types": [
+        "electric"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 27,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 28,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 29,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 30,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 31,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 32,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 33,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 34,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 35,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 36,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 37,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 38,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 39,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 40,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 41,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 42,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 43,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 44,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 45,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 46,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 47,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 48,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 49,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 50,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 51,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 52,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 53,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 54,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 55,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 56,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 57,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 58,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 59,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 60,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 61,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 62,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 63,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 64,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 65,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 66,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 67,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 68,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 69,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 70,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 71,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 72,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 73,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 74,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 75,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 76,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 77,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 78,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 79,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 80,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 81,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 82,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 83,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 84,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 85,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 86,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 87,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 88,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 89,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 90,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 91,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 92,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 93,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 94,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 95,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 96,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 97,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 98,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 99,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 100,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 101,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 102,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 103,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 104,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 105,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 106,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 107,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 108,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 109,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 110,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 111,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 112,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 113,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 114,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 115,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 116,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 117,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 118,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 119,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 120,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 121,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 122,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 123,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 124,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 125,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 126,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 127,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 128,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 129,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 130,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 131,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 132,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 133,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 134,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 135,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 136,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 137,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 138,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 139,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 140,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 141,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 142,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 143,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 144,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 145,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 146,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 147,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 148,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 149,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    },
+    {
+      "id": 150,
+      "name": "???",
+      "image": "https:\/\/placehold.co\/475x475?text=?",
+      "types": []
+    }
+  ],
+  "page": 1,
+  "per_page": 150
+}

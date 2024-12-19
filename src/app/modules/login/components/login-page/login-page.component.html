@@ -1,0 +1,59 @@
+<div class="page-title">
+  <img
+    ngSrc="/assets/poke-ball.svg"
+    width="320"
+    height="320"
+    alt="image"
+  />
+
+  <h1>POKEDEX</h1>
+</div>
+
+<form
+  class="login-form"
+  (ngSubmit)="onSubmit()"
+>
+  <mat-form-field appearance="outline">
+    <mat-label>Login with your trainer token</mat-label>
+
+    <input
+      matInput
+      [type]="isDisplayToken ? 'text' : 'password'"
+      [formControl]="tokenControl"
+    />
+
+    <button
+      mat-icon-button
+      matSuffix
+      type="button"
+      (click)="isDisplayToken = !isDisplayToken"
+    >
+      <mat-icon>{{ isDisplayToken ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+
+    @if (tokenControl.hasError('required')) {
+      <mat-error> Your token is <strong>required</strong> </mat-error>
+    }
+  </mat-form-field>
+
+  @if (isConnecting) {
+    <mat-spinner [diameter]="40"></mat-spinner>
+  } @else {
+    <button
+      mat-flat-button
+      type="submit"
+      color="primary"
+      [disabled]="tokenControl.invalid"
+    >
+      Enter
+    </button>
+  }
+  @if (isInvalidToken) {
+    <div class="error-message">This token is not valid</div>
+  }
+</form>
+
+<div class="helper-message">
+  Don't have a trainer token yet? Head over to <a [href]="registerUrl">{{ registerUrl }}</a> to
+  register.
+</div>

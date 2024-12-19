@@ -1,0 +1,17 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../tsconfig.spec.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "types": [
+      "jest",
+      "jest-environment-puppeteer"
+    ]
+  },
+  "files": [
+    "utils.ts"
+  ],
+  "include": [
+    "**/*.test.ts"
+  ]
+}

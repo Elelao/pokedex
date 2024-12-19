@@ -1,0 +1,42 @@
+@if (trainer$ | async; as trainer) {
+  <mat-toolbar color="primary">
+    <a
+      class="home-link"
+      [routerLink]="['/']"
+      >Pokedex</a
+    >
+
+    <div class="spacer"></div>
+
+    <button
+      mat-button
+      [matMenuTriggerFor]="trainerMenu"
+    >
+      <mat-icon>person</mat-icon>
+      {{ trainer.name }}
+    </button>
+
+    <mat-menu
+      #trainerMenu="matMenu"
+      class="trainer-menu"
+    >
+      <button
+        mat-menu-item
+        (click)="logout()"
+      >
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+      <button
+        mat-menu-item
+        (click)="reset()"
+      >
+        <mat-icon>recycling</mat-icon>
+        <span>Reset pokedex</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+}
+<main class="content-wrapper">
+  <router-outlet></router-outlet>
+</main>

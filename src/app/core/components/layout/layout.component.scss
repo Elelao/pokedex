@@ -1,0 +1,26 @@
+:host {
+  display: block;
+
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    .home-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .spacer {
+      flex: 1 1 auto;
+    }
+  }
+
+  .content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 128px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
