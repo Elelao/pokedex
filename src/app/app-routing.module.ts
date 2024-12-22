@@ -3,12 +3,13 @@ import { provideRouter, RouterModule, Routes, withComponentInputBinding } from '
 import { DummyComponent } from '@core/components/dummy/dummy.component';
 import { LoginPageComponent } from '@modules/login/components/login-page/login-page.component';
 import { LoginModule } from '@modules/login/login.module';
+import { SpeciesListComponent } from '@modules/species/species-list/species-list.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: DummyComponent,
+    component: SpeciesListComponent, 
   },
   {
     path: 'login',

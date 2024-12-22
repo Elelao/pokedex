@@ -1,0 +1,33 @@
+<div class="dialog-container">
+    <div class="dialog-header">
+      <h2>Discover Species</h2>
+      <button class="close-button" (click)="dialogRef.close()">✕</button>
+    </div>
+    <div class="dialog-content">
+      <input
+        type="file"
+        #fileInput
+        (change)="onFileSelected($event)"
+        accept="image/*"
+        style="display: none"
+      >
+      
+      <div class="upload-box" (click)="fileInput.click()">
+        <p>{{ selectedFile ? selectedFile.name : 'Click to upload image' }}</p>
+      </div>
+
+      <div *ngIf="isUploading" class="progress-bar">
+        Loading...
+      </div>
+    </div>
+    <div class="dialog-actions">
+      <button class="cancel-button" (click)="dialogRef.close()">Cancel</button>
+      <button 
+        class="confirm-button" 
+        [disabled]="!selectedFile || isUploading"
+        (click)="onSubmit()"
+      >
+        Identify Species
+      </button>
+    </div>
+  </div>

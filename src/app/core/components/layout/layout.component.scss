@@ -11,6 +11,12 @@
       color: inherit;
     }
 
+    .center-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     .spacer {
       flex: 1 1 auto;
     }

@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { TrainerResetModalComponent } from '@core/components/trainer-reset-modal/trainer-reset-modal.component';
 import { TrainerLogout, TrainerState } from '@core/state/trainer';
 import { Store } from '@ngxs/store';
+import { DiscoverDialogComponent } from 'src/app/discover-dialog/discover-dialog.component';
 
 @Component({
   standalone: true,
@@ -39,4 +40,27 @@ export class LayoutComponent {
   reset() {
     this.dialog.open(TrainerResetModalComponent);
   }
+
+  openDiscoverDialog(): void {
+    const dialogRef = this.dialog.open(DiscoverDialogComponent, {
+      width: '500px',
+      ariaLabel: 'Discover species'
+    });
+
+    dialogRef.afterClosed().subscribe((result: boolean | undefined) => {
+      if (result) {
+        console.log('Dialog confirmed');
+      } else {
+        console.log('Dialog cancelled or closed');
+      }
+    });
+  }
+  /*
+  dialogRef.afterClosed().subscribe(result => {
+    if (result) {
+      // Handle the result from the API if needed
+      console.log('Pokemon identified:', result);
+    }
+  });
+  */
 }
