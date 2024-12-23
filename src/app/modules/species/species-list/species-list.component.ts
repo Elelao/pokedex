@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { SpeciesService, Species } from '../../../core/services/species.service';
 import { Subscription } from 'rxjs/internal/Subscription';
 
@@ -7,7 +8,7 @@ import { Subscription } from 'rxjs/internal/Subscription';
   selector: 'app-species-list',
   templateUrl: './species-list.component.html',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
 export class SpeciesListComponent implements OnInit, OnDestroy {
   isLoading = false;

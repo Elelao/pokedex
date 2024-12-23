@@ -1,15 +1,11 @@
-<div *ngIf="isLoading" class="loading">Loading species...</div>
-
 <div *ngIf="!isLoading && species.length > 0" class="species-grid">
-  <div *ngFor="let specie of species" class="species-card">
-    <img [src]="specie.image" [alt]="specie.name" class="species-image">
-    <div class="species-info">
-      <h2>{{ specie.name }}</h2>
-      <p class="species-id">#{{ specie.id }}</p>
-    </div>
-  </div>
-</div>
-
-<div *ngIf="!isLoading && species.length === 0" class="no-results">
-  <p>No species found.</p>
-</div>
+   <div *ngFor="let specie of species" class="species-card">
+    <a [routerLink]="['/species', specie.id]">
+      <img [src]="specie.image" [alt]="specie.name" class="species-image">
+      <div class="species-info">
+        <h2>{{ specie.name }}</h2>
+        <p class="species-id">#{{ specie.id }}</p>
+      </div>
+    </a>
+   </div>
+ </div>

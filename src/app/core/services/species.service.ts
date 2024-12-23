@@ -38,6 +38,9 @@ export class SpeciesService {
   identifySpecies(image: File): Observable<any> {
     const formData = new FormData();
     formData.append('file', image);
-    return this.http.post('https://api.pokedexercice.ch/species/identify', formData);
+    return this.http.post(this.apiUrl + "/identify", formData);
   }
+
+  
+  
 }
