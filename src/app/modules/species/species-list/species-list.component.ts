@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SpeciesService, Species } from '../../../core/services/species.service';
 import { Subscription } from 'rxjs/internal/Subscription';
+import { unwrapData } from '@core/http/unwrap-data';
 
 @Component({
   selector: 'app-species-list',
@@ -14,8 +15,9 @@ export class SpeciesListComponent implements OnInit, OnDestroy {
   isLoading = false;
   species: Species[] = [];
   error: string | null = null;
-
+  searchTerm: string = '';
   private sub1!: Subscription;
+
   constructor(private speciesService: SpeciesService,
     private cdr: ChangeDetectorRef) {}
 
@@ -29,15 +31,19 @@ export class SpeciesListComponent implements OnInit, OnDestroy {
     
   }
 
-  private loadSpecies() {
+  onSearch(event: Event) {
+    this.searchTerm = (event.target as HTMLInputElement).value;
+    this.loadSpecies(this.searchTerm);
+}
+
+  private loadSpecies(term?:string) {
     this.isLoading = true;
     this.sub1=this.speciesService.getAllSpecies()
       .subscribe({
         next: (data) => {
-          this.species = data.data;
-          console.log(data, this.species.length);
+          this.species = unwrapData(data);
           this.isLoading = false;
-          this.cdr.detectChanges();
+          this.cdr.detectChanges(); /*PH */
         },
         error: (error) => {
           console.error('Error fetching species:', error);

@@ -1,3 +1,17 @@
+<div *ngIf="isLoading" class="loading">Loading species...</div>
+<div class="search-container">
+<input type="text" placeholder="Search species..." (input)="onSearch($event)">
+</div>
+<!-- 
+<div class="search-container">
+  <input 
+    type="text" 
+    [(ngModel)]="searchTerm" 
+    (ngModelChange)="onSearchChange($event)"
+    placeholder="Search species..."
+    class="search-input">
+</div>
+-->
 <div *ngIf="!isLoading && species.length > 0" class="species-grid">
    <div *ngFor="let specie of species" class="species-card">
     <a [routerLink]="['/species', specie.id]">

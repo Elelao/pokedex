@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Species {
@@ -27,9 +27,15 @@ export class SpeciesService {
 
   constructor(private http: HttpClient) { }
 
-  getAllSpecies(): Observable<resultSpecies> {
-    return this.http.get<resultSpecies>(this.apiUrl);
-  }
+  getAllSpecies(searchTerm?: string): Observable<resultSpecies> {
+    let params = new HttpParams();
+    if (searchTerm) {
+        params = params.set('search', searchTerm);
+    }
+    return this.http.get<resultSpecies>(this.apiUrl, { params });
+}
+
+
 
   getSpeciesById(id: number): Observable<Species> {
     return this.http.get<Species>(`${this.apiUrl}/${id}`);
@@ -40,7 +46,4 @@ export class SpeciesService {
     formData.append('file', image);
     return this.http.post(this.apiUrl + "/identify", formData);
   }
-
-  
-  
 }

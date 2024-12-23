@@ -49,7 +49,9 @@ export class LayoutComponent {
 
     dialogRef.afterClosed().subscribe((result: boolean | undefined) => {
       if (result) {
-        console.log('Dialog confirmed');
+        console.log('Pokemon identified:', result);
+        // force refresh
+        window.location.reload();
       } else {
         console.log('Dialog cancelled or closed');
       }
