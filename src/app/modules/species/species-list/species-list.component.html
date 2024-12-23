@@ -1,6 +1,6 @@
 <div *ngIf="isLoading" class="loading">Loading species...</div>
 <div class="search-container">
-<input type="text" placeholder="Search species..." (input)="onSearch($event)">
+  <input type="text" placeholder="Search species..." [(ngModel)]="searchTerm" (ngModelChange)="onSearchChange(searchTerm)">
 </div>
 <!-- 
 <div class="search-container">

@@ -4,37 +4,52 @@ import { RouterModule } from '@angular/router';
 import { SpeciesService, Species } from '../../../core/services/species.service';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { unwrapData } from '@core/http/unwrap-data';
+import { Subject } from 'rxjs/internal/Subject';
+import { debounceTime } from 'rxjs/internal/operators/debounceTime';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-species-list',
   templateUrl: './species-list.component.html',
   standalone: true,
-  imports: [CommonModule, RouterModule]
+  imports: [CommonModule, RouterModule, FormsModule]
 })
 export class SpeciesListComponent implements OnInit, OnDestroy {
   isLoading = false;
   species: Species[] = [];
   error: string | null = null;
   searchTerm: string = '';
+  private searchSubject = new Subject<string>();
   private sub1!: Subscription;
+  private searchSubscription!: Subscription;
 
   constructor(private speciesService: SpeciesService,
     private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.loadSpecies();
+    this.setupSearch();
   }
 
   ngOnDestroy() {
     if(this.sub1!=null)
       this.sub1.unsubscribe();
-    
+    if(this.searchSubscription!=null)
+      this.searchSubscription.unsubscribe();
+ 
   }
 
-  onSearch(event: Event) {
-    this.searchTerm = (event.target as HTMLInputElement).value;
-    this.loadSpecies(this.searchTerm);
-}
+  private setupSearch() {
+    this.searchSubscription = this.searchSubject.pipe(
+      debounceTime(300) // Wait for 300ms pause so we don't make an API call for every keystroke
+    ).subscribe(searchTerm => {
+      this.loadSpecies(searchTerm);
+    });
+  }
+
+  onSearchChange(searchTerm: string) {
+    this.searchSubject.next(searchTerm);
+  }
 
   private loadSpecies(term?:string) {
     this.isLoading = true;
