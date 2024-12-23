@@ -31,6 +31,7 @@ export class SpeciesService {
     let params = new HttpParams();
     if (searchTerm) {
         params = params.set('search', searchTerm);
+        console.log("params")
     }
     return this.http.get<resultSpecies>(this.apiUrl, { params });
 }

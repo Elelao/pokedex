@@ -12,7 +12,7 @@
     class="search-input">
 </div>
 -->
-<div *ngIf="!isLoading && species.length > 0" class="species-grid">
+<div *ngIf="species.length > 0" class="species-grid">
    <div *ngFor="let specie of species" class="species-card">
     <a [routerLink]="['/species', specie.id]">
       <img [src]="specie.image" [alt]="specie.name" class="species-image">

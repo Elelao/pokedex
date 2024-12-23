@@ -40,8 +40,9 @@ export class SpeciesListComponent implements OnInit, OnDestroy {
   }
 
   private setupSearch() {
+    console.log("setup")
     this.searchSubscription = this.searchSubject.pipe(
-      debounceTime(300) // Wait for 300ms pause so we don't make an API call for every keystroke
+      debounceTime(1000) // Wait for 300ms pause so we don't make an API call for every keystroke
     ).subscribe(searchTerm => {
       this.loadSpecies(searchTerm);
     });
@@ -49,11 +50,13 @@ export class SpeciesListComponent implements OnInit, OnDestroy {
 
   onSearchChange(searchTerm: string) {
     this.searchSubject.next(searchTerm);
+    console.log("OnSearchChange");
   }
+  
 
   private loadSpecies(term?:string) {
     this.isLoading = true;
-    this.sub1=this.speciesService.getAllSpecies()
+    this.sub1=this.speciesService.getAllSpecies(term)
       .subscribe({
         next: (data) => {
           this.species = unwrapData(data);
@@ -68,3 +71,33 @@ export class SpeciesListComponent implements OnInit, OnDestroy {
       });
   }
 }
+
+/*
+private loadSpecies(term?: string) {
+    this.isLoading = true;
+    this.sub1 = this.speciesService.getAllSpecies()
+      .pipe(
+        map(data => unwrapData(data)),
+        map(species => {
+          if (!term) {
+            return species; // Return all species if no search term
+          }
+          term = term.toLowerCase();
+          return species.filter(specie =>
+            specie.name.toLowerCase().includes(term)
+          );
+        })
+      )
+      .subscribe({
+        next: (filteredSpecies) => {
+          this.species = filteredSpecies;
+          this.isLoading = false;
+        },
+        error: (error) => {
+          console.error('Error fetching species:', error);
+          this.error = 'Failed to load species. Please try again later.';
+          this.isLoading = false;
+        }
+      });
+  } 
+*/
